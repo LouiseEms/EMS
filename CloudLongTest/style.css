@@ -1,0 +1,155 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: lightblue;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-top: 0;
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Section styles */
+section {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+section .function,
+section .image-container {
+    display: flex;
+    align-items: center;
+}
+
+section .function img,
+section .image-container img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section ul {
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+section li {
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Author section styles */
+.author-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.author-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Additional styles */
+#tr {
+    font-size: small;
+}
+
+#sub {
+    text-align: center;
+}
+
+.function {
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.function img {
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+#image-left,
+#image-right {
+    width: 45%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#image-left {
+    float: left;
+    margin-right: 5%;
+}
+
+#image-right {
+    float: right;
+    margin-left: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    #image-left,
+    #image-right {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+}
